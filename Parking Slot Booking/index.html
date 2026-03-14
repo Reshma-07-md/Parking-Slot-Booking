@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Parking System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🚗 Smart Parking Slot Management</h1>
+
+<div class="dashboard">
+
+<p>Total Slots: <span id="total">10</span></p>
+<p>Available Slots: <span id="available"></span></p>
+<p>Occupied Slots: <span id="occupied"></span></p>
+
+</div>
+
+<div class="form">
+
+<input type="text" id="carNumber" placeholder="Enter Car Number (TS09AB1234)">
+<button onclick="parkCar()">Park Car</button>
+
+</div>
+
+<h2>Parking Slots</h2>
+
+<div class="parking-lot" id="parkingLot"></div>
+
+<h2>Parking History</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Car Number</th>
+<th>Entry Time</th>
+<th>Exit Time</th>
+<th>Fee</th>
+</tr>
+</thead>
+
+<tbody id="history"></tbody>
+
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
